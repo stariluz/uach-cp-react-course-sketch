@@ -9,20 +9,23 @@ const Events = ({ search }: { search: string }) => {
   const handleEventItemClick: MouseEventHandler = (id: any) => {
     console.log(id);
   }
-  let filteredEvents = events;
-  if (search && search.length > 0) {
-    filteredEvents = filteredEvents.filter((event) => event.name.toLowerCase().includes(search))
+  const renderEvents = (): JSX.Element[] => {
+    let filteredEvents = events;
+    if (search && search.length > 0) {
+      filteredEvents = filteredEvents.filter((event) => event.name.toLowerCase().includes(search))
+    }
+    return filteredEvents.map((event) => {
+      return <EventItem
+        key={`event-event-item-${event.id}`}
+        eventItem={event}
+        onEventItemClick={handleEventItemClick}
+      />
+    });
+
   }
-  const eventComponents = filteredEvents.map((event) => {
-    return <EventItem
-      key={`event-event-item-${event.id}`}
-      eventItem={event}
-      onEventItemClick={handleEventItemClick}
-    />
-  });
   return (
     <div>
-      {eventComponents}
+      {renderEvents()}
     </div>
   )
 }
