@@ -4,16 +4,16 @@ import useEventsData from "src/hooks/useEventsData";
 
 
 const Events = ({ search }: { search: string }) => {
-  const { events } = useEventsData();
+  const { events, error, isLoading } = useEventsData();
   const handleEventItemClick: MouseEventHandler = (id: any) => {
     console.log(id);
   }
   const renderEvents = (): JSX.Element[] => {
     let filteredEvents = events;
     if (search && search.length > 0) {
-      filteredEvents = filteredEvents.filter((event) => event.name.toLowerCase().includes(search))
+      filteredEvents = filteredEvents.filter((event: any) => event.name.toLowerCase().includes(search))
     }
-    return filteredEvents.map((event) => {
+    return filteredEvents.map((event: any) => {
       return <EventItem
         key={`event-event-item-${event.id}`}
         eventItem={event}
@@ -24,7 +24,18 @@ const Events = ({ search }: { search: string }) => {
   }
   return (
     <div>
-      {renderEvents()}
+      {
+        isLoading ?
+          <p>
+            Loading content...
+          </p>
+          : error ?
+            <p>
+              Something goes wrong :(
+            </p>
+            :
+            renderEvents()
+      }
     </div>
   )
 }

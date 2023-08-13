@@ -17,7 +17,7 @@ function App() {
       <Events
         search={search}
       ></Events>
-      <SignupForm></SignupForm>
+      {/* <SignupForm></SignupForm> */}
     </>
   )
 }
