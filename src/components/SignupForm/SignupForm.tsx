@@ -1,51 +1,54 @@
 import { FormEventHandler, MouseEventHandler, useState } from "react";
+import { FieldValues, SubmitHandler, useForm } from 'react-hook-form';
 
 const SignupForm = ({ }: {}) => {
-  const [name, setName] = useState('');
-  const [age, setAge] = useState('');
-  const [address, setAddress] = useState('');
-  const [zipCode, setZipCode] = useState('');
-  const [phone, setPhone] = useState('');
+  const { register, handleSubmit, reset, formState } = useForm();
 
   const handleClearForm: MouseEventHandler = () => {
-    setName("");
-    setAge("");
-    setAddress("");
-    setZipCode("");
-    setPhone("");
+    reset();
   }
 
-  const handleFormSubmit: FormEventHandler<HTMLFormElement> = (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    console.log(event);
+  // const handleFormSubmit: FormEventHandler<HTMLFormElement> = (event: React.FormEvent<HTMLFormElement>) => {
+  //   event.preventDefault();
+  //   console.log(event);
+  // }
+  const handleFormSubmit: SubmitHandler<FieldValues> = (data: any) => {
+    console.log(data);
   }
+  console.log(formState.errors);
+
   return (
-    <form onSubmit={handleFormSubmit}>
+    <form onSubmit={handleSubmit(handleFormSubmit)}>
       <div>
         <label htmlFor="">
           Name
-          <input type="text" value={name}
-            onChange={(event) => setName(event?.target.value)} />
+          <input type="text"
+            {...register("name", { required: true })}
+          />
         </label>
         <label htmlFor="">
           Age
-          <input type="text" value={age}
-            onChange={(event) => setAge(event?.target.value)} />
+          <input type="text"
+            {...register("age", { required: true })}
+          />
         </label>
         <label htmlFor="">
           Address
-          <input type="text" value={address}
-            onChange={(event) => setAddress(event?.target.value)} />
+          <input type="text"
+            {...register("address", { required: true })}
+          />
         </label>
         <label htmlFor="">
           Zip Code
-          <input type="text" value={zipCode}
-            onChange={(event) => setZipCode(event?.target.value)} />
+          <input type="text"
+            {...register("zipCode", { required: true })}
+          />
         </label>
         <label htmlFor="">
           Phone
-          <input type="text" value={phone}
-            onChange={(event) => setPhone(event?.target.value)} />
+          <input type="text"
+            {...register("phone", { required: true })}
+          />
         </label>
       </div>
       <div>
