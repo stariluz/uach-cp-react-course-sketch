@@ -1,6 +1,6 @@
-const EventItem = ({ eventItem, }: { eventItem: any }) => {
-  console.log(eventItem);
+import { MouseEventHandler } from "react";
 
+const EventItem = ({ eventItem, onEventItemClick }: { eventItem: any, onEventItemClick: MouseEventHandler }) => {
   return (
     <div>
       <img src={eventItem.images[0].url} alt={eventItem.name} width={200} />
@@ -10,6 +10,7 @@ const EventItem = ({ eventItem, }: { eventItem: any }) => {
       <p>
         {eventItem.info}
       </p>
+      <button type="button" onClick={() => onEventItemClick(eventItem.id)}>Ver más</button>
     </div>
   )
 }

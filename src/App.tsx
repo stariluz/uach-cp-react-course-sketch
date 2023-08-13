@@ -4,10 +4,18 @@ import Navbar from './components/Navbar'
 import Events from './components/Events'
 
 function App() {
+  const [search, setSearch] = useState("")
+  const handleEventSearch = (search: string) => {
+    setSearch(search);
+  }
   return (
     <>
-      <Navbar></Navbar>
-      <Events></Events>
+      <Navbar
+        onSearch={handleEventSearch}
+      ></Navbar>
+      <Events
+        search={search}
+      ></Events>
     </>
   )
 }
