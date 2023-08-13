@@ -1,8 +1,8 @@
 function Navbar() {
   return (
     <div>
-      <p>Eventos</p>
-      <input type="text" name="" id="" placeholder="Evento" />
+      <p>Ticket office</p>
+      <input type="text" name="" id="" placeholder="Busca un evento..." />
     </div>
   );
 };
