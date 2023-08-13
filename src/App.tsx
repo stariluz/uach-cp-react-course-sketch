@@ -11,12 +11,12 @@ function App() {
   }
   return (
     <>
-      {/* <Navbar
+      <Navbar
         onSearch={handleEventSearch}
       ></Navbar>
       <Events
         search={search}
-      ></Events> */}
+      ></Events>
       <SignupForm></SignupForm>
     </>
   )

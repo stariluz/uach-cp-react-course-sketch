@@ -1,11 +1,10 @@
-import { MouseEventHandler, useState } from "react";
+import { MouseEventHandler } from "react";
 import EventItem from "./components/EventItem";
-import eventsJSON from 'src/data/events.json';
+import useEventsData from "src/hooks/useEventsData";
 
 
 const Events = ({ search }: { search: string }) => {
-  const [data] = useState(eventsJSON);
-  const { _embedded: { events } } = data;
+  const { events } = useEventsData();
   const handleEventItemClick: MouseEventHandler = (id: any) => {
     console.log(id);
   }
