@@ -1,0 +1,47 @@
+.eventItemContainer {
+  margin-bottom: 2rem;
+}
+
+.dFlex {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+h3 {
+  margin: 0;
+}
+
+.flexColumn {
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.imageContainer {
+  min-height: 300px;
+  height: 300px;
+  max-height: 300px;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  /* overflow: hidden; */
+}
+
+.fitImage {
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.itemDescription {
+  /* margin: 0; */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
