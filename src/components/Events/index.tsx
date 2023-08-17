@@ -1,5 +1,5 @@
 import { MouseEventHandler } from "react";
-import EventItem from "./components/EventItem";
+import EventItem from "./components/EventItem/EventItem";
 import useEventsData from "src/hooks/useEventsData";
 
 import eventSyle from './Events.modules.css';
@@ -21,12 +21,12 @@ const Events = ({ search }: { search: string }) => {
         onEventItemClick={handleEventItemClick}
       />
     });
-    return <div className="row g-3">
+    return <div className="row row-cols-3 g-5">
       {filteredEventsItems}
     </div>
   }
   return (
-    <div>
+    <div className="container">
       {
         isLoading ?
           <p>

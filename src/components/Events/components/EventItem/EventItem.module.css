@@ -1,5 +1,16 @@
-.eventItemContainer {
+/* .eventItemContainer {
   margin-bottom: 2rem;
+} */
+.card {
+  /* min-height: 500px; */
+  max-height: 500px;
+  min-height: 100%;
+}
+
+.cardBody {
+  padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+  position: relative;
+  bottom: 0;
 }
 
 .dFlex {
@@ -10,6 +21,7 @@
 
 h3 {
   margin: 0;
+  font-size: 1.5rem;
 }
 
 .flexColumn {
@@ -19,13 +31,17 @@ h3 {
 }
 
 .imageContainer {
-  min-height: 300px;
-  height: 300px;
-  max-height: 300px;
+  min-height: 200px;
+  height: 100%;
   width: 100%;
   min-width: 100%;
   max-width: 100%;
-  /* overflow: hidden; */
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .fitImage {
@@ -35,13 +51,20 @@ h3 {
   max-width: 100%;
   object-fit: cover;
   object-position: center;
+  position: absolute;
 }
 
 .itemDescription {
   /* margin: 0; */
+  font-size: 0.80rem;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   text-overflow: ellipsis;
   -webkit-line-clamp: 3;
   overflow: hidden;
+}
+
+.button {
+  font-size: 0.8rem;
+  background-color: rgb(42, 42, 42);
 }
