@@ -1,3 +1,22 @@
+.qrContainer {
+  margin: 1rem auto 0 auto;
+  background-color: #30BF39;
+  max-width: 200px;
+  text-align: center;
+  font-weight: 700;
+  border-radius: 4px;
+  gap: 1rem;
+  padding-top: 0.25rem;
+}
+
+.qrCode {
+  margin-top: 0.25rem;
+  width: 100%;
+  /* width: 7rem;
+  height: 7rem; */
+  margin-right: 1rem;
+}
+
 .container {
   background-color: rgb(30, 30, 30);
   color: rgb(225, 225, 225);

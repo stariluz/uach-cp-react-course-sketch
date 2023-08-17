@@ -6,6 +6,12 @@
   margin-right: 2rem;
 }
 
+.qrCode {
+  width: 7rem;
+  height: 7rem;
+  margin-right: 1rem;
+}
+
 .title {
   /* font-family: 'Bricolage Grotesque', sans-serif;
 font-family: 'Inter', sans-serif; */

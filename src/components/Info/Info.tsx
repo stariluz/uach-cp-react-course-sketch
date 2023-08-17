@@ -1,4 +1,6 @@
 import infoStyles from './Info.module.css'
+import whatsappQrCode from 'src/assets/whatsapp-qr-code.png'
+
 const Info = () => {
   return <div className={`${infoStyles.container} col-12 col-sm-4 col-md-3 mb-4`}>
     <b>Con este proyecto aprenderemos:</b>
@@ -23,6 +25,10 @@ const Info = () => {
       <li>Custom Hooks</li>
       <li>Y más por agregar :D <span className="animated-dots"></span></li>
     </ol>
+    <div className={`${infoStyles.qrContainer}`}>
+      <label>¡Únete al grupo de whatsapp del curso!</label>
+      <img src={whatsappQrCode} alt="Código QR de whatsapp" className={`${infoStyles.qrCode}`} />
+    </div>
   </div>
 }
 export default Info;

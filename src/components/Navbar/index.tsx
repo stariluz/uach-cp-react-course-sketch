@@ -1,6 +1,7 @@
 import { ChangeEvent, EventHandler, KeyboardEvent, KeyboardEventHandler, useState } from "react";
 import navbarStyles from './Navbar.module.css';
 import logo from 'src/assets/logo.png'
+import qrCode from 'src/assets/qr-code.png'
 
 const Navbar = ({ onSearch }: { onSearch: EventHandler<any> }) => {
   const [search, setSearch] = useState("");
@@ -15,7 +16,10 @@ const Navbar = ({ onSearch }: { onSearch: EventHandler<any> }) => {
   return (
     <div className="d-flex flex-column flex-md-row justify-content-between align-items-center p-3 p-sm-4 p-lg-5">
       <div className={`d-flex flex-column flex-md-row  align-items-center`}>
-        <img src={logo} alt="Logo del Club de Programación" className={navbarStyles.logo} />
+        <div className={`d-flex justify-content-center align-items-center`}>
+          <img src={qrCode} alt="Qr a la página" className={navbarStyles.qrCode} />
+          <img src={logo} alt="Logo del Club de Programación" className={navbarStyles.logo} />
+        </div>
         <div className="">
           <h1 className={`${navbarStyles.title} fw-bold d-flex align-items-center`}>
             Curso de React
