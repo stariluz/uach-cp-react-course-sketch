@@ -3,7 +3,7 @@ import eventItemStyles from './EventItem.module.css';
 
 const EventItem = ({ eventItem, onEventItemClick }: { eventItem: any, onEventItemClick: MouseEventHandler }) => {
   return (
-    <div className="col-4">
+    <div className="col">
       <div className={`${eventItemStyles.card} card p-0`}>
         {/* <img src={eventItem.images[0].url} alt={eventItem.name} className={`card-img-top`} /> */}
         <div className={`${eventItemStyles.imageContainer} card-img-top `}>

@@ -21,7 +21,7 @@ const Events = ({ search }: { search: string }) => {
         onEventItemClick={handleEventItemClick}
       />
     });
-    return <div className="row row-cols-3 g-5">
+    return <div className="row row-cols-2 row-cols-lg-3 g-2 g-sm-4 ">
       {filteredEventsItems}
     </div>
   }

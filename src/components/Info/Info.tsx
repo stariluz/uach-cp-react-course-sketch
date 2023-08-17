@@ -1,0 +1,30 @@
+import infoStyles from './Info.module.css'
+const Info = () => {
+  return <div className={`${infoStyles.container} col-3`}>
+    <p>
+      <b>Con este proyecto aprenderemos:</b>
+      <ol>
+        <li>
+          ¿Qué es React y su virtual DOM?
+        </li>
+        <li>
+          Ecosistema de desarrollo
+        </li>
+        <li>¿Qué es un componente y como se subdivide?</li>
+        <li>JSX y React Components</li>
+        <li>Reactividad, estado e inmutabilidad</li>
+        <li>Props</li>
+        <li>Iniciación del proyecto con <i>Vite</i></li>
+        <li>Renderizado condicional</li>
+        <li>Renderizado de listas</li>
+        <li>Manejo de eventos</li>
+        <li>Formularios y <i>React Hook Form</i></li>
+        <li>¿Qué son los Hooks?</li>
+        <li>Hook: <i>useEffect</i></li>
+        <li>Custom Hooks</li>
+        <li>Y más por agregar :D <span className="animated-dots"></span></li>
+      </ol>
+    </p>
+  </div>
+}
+export default Info;

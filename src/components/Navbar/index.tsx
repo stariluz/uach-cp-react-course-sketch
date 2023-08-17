@@ -1,4 +1,5 @@
 import { ChangeEvent, EventHandler, KeyboardEvent, KeyboardEventHandler, useState } from "react";
+import navbarStyles from './Navbar.module.css';
 
 const Navbar = ({ onSearch }: { onSearch: EventHandler<any> }) => {
   const [search, setSearch] = useState("");
@@ -11,13 +12,30 @@ const Navbar = ({ onSearch }: { onSearch: EventHandler<any> }) => {
     }
   }
   return (
-    <div>
-      <p>Ticket office</p>
-      <input type="text" name="" id="" placeholder="Busca un evento..."
-        onChange={handleSearchChange}
-        onKeyDown={handleSearchKeyDown}
-        value={search}
-      />
+    <div className="d-flex flex-column flex-md-row justify-content-between align-items-center p-3 p-sm-4 p-lg-5">
+      <div className={`d-flex align-items-center`}>
+        <img src="src/assets/logo.png" alt="Logo del Club de Programación" className={navbarStyles.logo} />
+        <div className="">
+          <h1 className={`${navbarStyles.title} fw-bold d-flex align-items-center`}>
+            Curso de React
+          </h1>
+          <h4>Con datos extraídos de la API de TicketMaster</h4>
+
+        </div>
+      </div>
+      <div className="m-1">
+        <div className="input-icon">
+          <input type="text" name="" id="" placeholder="Busca un evento..." className="form-control form-control-rounded"
+            onChange={handleSearchChange}
+            onKeyDown={handleSearchKeyDown}
+            value={search}
+          />
+          <span className="input-icon-addon">
+            <i className="ti ti-search"></i>
+          </span>
+        </div>
+
+      </div>
     </div>
   );
 };
