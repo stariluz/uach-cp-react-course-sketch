@@ -1,4 +1,4 @@
-import { useRef, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import eventsJSON from 'src/data/events.json';
 
 const useEventsData = () => {

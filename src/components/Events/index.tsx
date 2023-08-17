@@ -2,7 +2,7 @@ import { MouseEventHandler } from "react";
 import EventItem from "./components/EventItem/EventItem";
 import useEventsData from "src/hooks/useEventsData";
 
-import eventSyle from './Events.modules.css';
+// import eventSyle from './Events.modules.css';
 
 const Events = ({ search }: { search: string }) => {
   const { events, error, isLoading } = useEventsData();
@@ -21,20 +21,20 @@ const Events = ({ search }: { search: string }) => {
         onEventItemClick={handleEventItemClick}
       />
     });
-    return <div className="row row-cols-2 row-cols-lg-3 g-2 g-sm-4 ">
+    return <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-2 g-sm-3 g-md-4 ">
       {filteredEventsItems}
     </div>
   }
   return (
-    <div className="container">
+    <div className="">
       {
         isLoading ?
           <p>
-            Loading content...
+            Cargando contenido...
           </p>
           : error ?
             <p>
-              Something goes wrong :(
+              Algo salió mal D:
             </p>
             :
             renderEvents()

@@ -1,4 +1,4 @@
-import { FormEventHandler, MouseEventHandler, useState } from "react";
+import { MouseEventHandler } from "react";
 import { FieldValues, SubmitHandler, useForm } from 'react-hook-form';
 
 const SignupForm = ({ }: {}) => {
