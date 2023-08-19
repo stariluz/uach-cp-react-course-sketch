@@ -1,19 +1,24 @@
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import './App.css'
-import Navbar from './components/Navbar'
+import Navbar, { NavbarRef } from './components/Navbar/Navbar'
 import Events from './components/Events'
 // import SignupForm from './components/SignupForm/SignupForm'
 import Info from './components/Info/Info'
 
 function App() {
   const [search, setSearch] = useState("")
+  const logosRef = useRef<NavbarRef>(null);
   const handleEventSearch = (search: string) => {
+    console.log(logosRef.current?.search);
+    console.log(logosRef.current?.setSearch?.(''));
+
     setSearch(search);
   }
   return (
     <>
       <Navbar
         onSearch={handleEventSearch}
+        ref={logosRef}
       ></Navbar>
       <div className="container-fluid">
         <div className="row">
