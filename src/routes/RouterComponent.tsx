@@ -49,7 +49,7 @@ const router = createBrowserRouter([
     path: '*',
     element: <Navigate to={`react/ticket-master`} />
   }
-]);
+], { basename: '/uach-react-course-sketch/' });
 
 const RouterComponent = () => <RouterProvider router={router} />
 export default RouterComponent;

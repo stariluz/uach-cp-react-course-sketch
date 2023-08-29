@@ -10,5 +10,5 @@ export default defineConfig({
       src: path.resolve('src/'),
     },
   },
-  // base: '/uach-react-course-sketch/',
+  base: '/uach-react-course-sketch/',
 })
