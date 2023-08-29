@@ -1,5 +1,5 @@
 import { useOutletContext } from "react-router-dom";
-import Events from "src/components/Events";
+import Events from "src/components/Events/Events";
 import Info from "src/components/Info/Info";
 
 const TicketMasterHome = () => {

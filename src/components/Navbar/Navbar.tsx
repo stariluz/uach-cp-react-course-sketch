@@ -29,7 +29,7 @@ const Navbar = forwardRef<NavbarRef, NavbarProps>(({ onSearch }: NavbarProps, lo
     setSearch: setSearch,
   }))
   return (
-    <div className="d-flex flex-column flex-md-row justify-content-between align-items-center p-3 p-sm-4 p-lg-5">
+    <div className="w-100 d-flex flex-column flex-md-row justify-content-between align-items-center p-3 p-sm-4 p-lg-5">
       <div className={`d-flex flex-column flex-md-row  align-items-center`}>
         <div className={`d-flex justify-content-center align-items-center`} ref={logosRef as any}>
           <img src={qrCode} alt="Qr a la página" className={navbarStyles.qrCode} />

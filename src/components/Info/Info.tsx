@@ -23,6 +23,15 @@ const Info = () => {
       <li>¿Qué son los Hooks?</li>
       <li>Hook: <i>useEffect</i></li>
       <li>Custom Hooks</li>
+      <li>¿Qué son las referencias?</li>
+      <li>Hook: useRef</li>
+      <li>Hooks: forwardRef y useImperativeHandle</li>
+      <li>Estilos en linea, CSS y módulos de CSS</li>
+      <li>¿Cómo funciona el routing y el Client Side Routing?</li>
+      <li>Ruteo con React Router DOM </li>
+      <li>Manejo de rutas erróneas</li>
+      <li>Rutas con parámetros</li>
+      <li>Crear rutas anidadas</li>
       <li>Y más por agregar :D <span className="animated-dots"></span></li>
     </ol>
     <div className={`${infoStyles.qrContainer}`}>

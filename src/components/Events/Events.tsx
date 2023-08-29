@@ -1,12 +1,15 @@
 import { MouseEventHandler } from "react";
 import EventItem from "./components/EventItem/EventItem";
 import useEventsData from "src/hooks/useEventsData";
+import { useNavigate } from "react-router-dom";
 
 // import eventSyle from './Events.modules.css';
 
 const Events = ({ search }: { search: string }) => {
   const { events, error, isLoading } = useEventsData();
+  const navigate = useNavigate();
   const handleEventItemClick: MouseEventHandler = (id: any) => {
+    navigate(`./event/${id}`);
     console.log(id);
   }
   const renderEvents = (): JSX.Element => {

@@ -1,6 +1,6 @@
 import { MouseEventHandler } from "react";
 import eventItemStyles from './EventItem.module.css';
-import { Link } from "react-router-dom";
+
 
 const EventItem = ({ eventItem, onEventItemClick }: { eventItem: any, onEventItemClick: MouseEventHandler }) => {
   return (
@@ -18,9 +18,9 @@ const EventItem = ({ eventItem, onEventItemClick }: { eventItem: any, onEventIte
             {eventItem.info}
           </p>
           <div className="d-grid">
-            <Link to={'./event/hhoihoisa'}>
-              <button type="button" onClick={() => onEventItemClick(eventItem.id)} className={`${eventItemStyles.button}`}>Ver más</button>
-            </Link>
+            <button type="button" onClick={() => onEventItemClick(eventItem.id)} className={`${eventItemStyles.button}`}>Ver más</button>
+            {/* <Link to={`./event/${eventItem.id}`}>
+            </Link> */}
           </div>
         </div>
       </div>
