@@ -1,4 +1,4 @@
-import { ChangeEvent, Dispatch, EventHandler, KeyboardEvent, KeyboardEventHandler, SetStateAction, forwardRef, useImperativeHandle, useRef, useState } from "react";
+import { ChangeEvent, Dispatch, EventHandler, KeyboardEvent, KeyboardEventHandler, SetStateAction, forwardRef, useImperativeHandle, useState } from "react";
 import navbarStyles from './Navbar.module.css';
 import logo from 'src/assets/logo.png'
 import qrCode from 'src/assets/qr-code.png'
