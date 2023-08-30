@@ -1,0 +1,38 @@
+[
+  {
+    "start": "2023-08-24T14:00:00",
+    "end": "2023-08-24T16:00:00",
+    "title": "Introducción a React",
+    "content": "1. ¿Qué es React y su virtual DOM?\n2. Ecosistema de desarrollo\n3. ¿Qué es un componente y como se subdivide?"
+  },
+  {
+    "start": "2023-09-04T14:00:00",
+    "end": "2023-09-04T16:00:00",
+    "title": "Reactividad y State",
+    "content": "4. JSX y React Components\n5. Reactividad, estado e inmutabilidad\n6. ¿Qué son los props?\n7. Iniciación del proyecto con Vite"
+  },
+  {
+    "start": "2023-09-18T14:00:00",
+    "end": "2023-09-18T16:00:00",
+    "title": "Condiciones, listas, eventos y formularios",
+    "content": "8. Renderizado condicional\n9. Renderizado de listas\n10. Manejo de eventos\n11. Formularios y React Hook Form"
+  },
+  {
+    "start": "2023-10-02T14:00:00",
+    "end": "2023-10-02T16:00:00",
+    "title": "Hooks",
+    "content": "12. ¿Qué son los Hooks?\n13. Hook: useEffect\n14. Custom Hooks\n15. ¿Qué son las referencias?\n16. Hook: useRef\n17. Hooks: forwardRef y useImperativeHandle"
+  },
+  {
+    "start": "2023-10-16T14:00:00",
+    "end": "2023-10-16T16:00:00",
+    "title": "Estilos",
+    "content": "18. Estilos en linea, CSS y módulos de CSS\nExtra: Bootstrap"
+  },
+  {
+    "start": "2023-10-30T14:00:00",
+    "end": "2023-10-30T16:00:00",
+    "title": "Rutas",
+    "content": "19. ¿Cómo funciona el routing y el Client Side Routing?\n20. Ruteo con React Router DOM\n21. Manejo de rutas erróneas\n22. Rutas con parámetros\n23. Crear rutas anidadas"
+  }
+]

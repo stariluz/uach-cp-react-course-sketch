@@ -10,6 +10,7 @@ import ReactProjects from "../views/ReactProjects/ReactProjects";
 import TicketMaster from "src/views/ReactProjects/TicketMaster/TicketMaster";
 import TicketMasterHome from "src/views/ReactProjects/TicketMaster/TicketMasterHome/TicketMasterHome";
 import TicketMasterEventDetail from "src/views/ReactProjects/TicketMaster/TicketMasterEventDetail/TicketMasterEventDetail";
+import ReactSummary from "src/views/ReactProjects/ReactSummary/ReactSummary";
 
 const router = createBrowserRouter([
   // {
@@ -23,7 +24,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "summary",
-        element: <div>Resumen</div>,
+        element: <ReactSummary />,
       },
       {
         path: 'ticket-master',
@@ -38,10 +39,6 @@ const router = createBrowserRouter([
             element: <TicketMasterEventDetail />,
           },
         ]
-      },
-      {
-        path: "calendar",
-        element: <div>Calendario</div>,
       },
     ]
   },
