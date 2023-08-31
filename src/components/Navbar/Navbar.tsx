@@ -39,11 +39,11 @@ const Navbar = forwardRef<NavbarRef, NavbarProps>(({ onSearch }: NavbarProps, lo
           <h1 className={`${navbarStyles.title} fw-bold d-flex align-items-center`}>
             Curso de React
           </h1>
-          <h4>Con datos extraídos de la API de TicketMaster</h4>
+          {/* <h4>Con datos extraídos de la API de TicketMaster</h4> */}
 
         </div>
       </div>
-      <div className="m-1">
+      {/* <div className="m-1">
         <div className="input-icon">
           <input type="text" name="" id="" placeholder="Busca un evento..." className="form-control form-control-rounded"
             onChange={handleSearchChange}
@@ -55,7 +55,7 @@ const Navbar = forwardRef<NavbarRef, NavbarProps>(({ onSearch }: NavbarProps, lo
           </span>
         </div>
 
-      </div>
+      </div> */}
     </div>
   );
 });

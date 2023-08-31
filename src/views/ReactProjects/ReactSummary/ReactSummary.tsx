@@ -3,7 +3,9 @@ import dayGridPlugin from "@fullcalendar/daygrid"
 import multiMonthPlugin from '@fullcalendar/multimonth'
 import { DateRangeInput, EventInput } from "fullcalendar/index.js";
 import esLocale from '@fullcalendar/core/locales/es';
-import React2023Classes from "src/data/react-2023-classes.json"
+import React2023Classes from "src/data/react-2023-classes.json";
+
+import './Calendar.css';
 
 const ReactSummary = () => {
   const validRange: DateRangeInput = {
@@ -37,7 +39,24 @@ const ReactSummary = () => {
           weekends: false,
         }
       }}
+      eventContent={renderEventContent}
+      headerToolbar={{
+        center: '',
+        left: '',
+        right: '',
+      }}
     ></FullCalendar>
   </div >
 }
 export default ReactSummary;
+
+function renderEventContent(eventInfo: EventInput) {
+  const start = new Date(eventInfo.event.start).getHours();
+  const end = new Date(eventInfo.event.end).getHours();
+  return (
+    <div className="custom-event">
+      <b>{start} - {end}</b><br></br>
+      <label className="fc-event-title">{eventInfo.event.title}</label>
+    </div>
+  );
+}
