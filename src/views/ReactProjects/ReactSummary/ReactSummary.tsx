@@ -8,7 +8,7 @@ import React2023Classes from "src/data/react-2023-classes.json";
 import './Calendar.css';
 
 const ReactSummary = () => {
-  const validRange: DateRangeInput = {
+  const visibleRange: DateRangeInput = {
     start: new Date(2023, 7, 14),
     end: new Date(2023, 11, 1),
   };
@@ -29,13 +29,14 @@ const ReactSummary = () => {
       defaultAllDay={false}
       locale={esLocale}
       events={events}
+      initialDate={visibleRange.start}
       views={{
         customMultiMonth: {
           type: 'multiMonthYear',
           duration: { months: 4 },
-          visibleRange: validRange,
+          visibleRange: visibleRange,
           multiMonthMaxColumns: 2,
-          validRange: validRange,
+          initialDate: visibleRange.start,
           weekends: false,
         }
       }}
@@ -51,11 +52,15 @@ const ReactSummary = () => {
 export default ReactSummary;
 
 function renderEventContent(eventInfo: EventInput) {
-  const start = new Date(eventInfo.event.start).getHours();
-  const end = new Date(eventInfo.event.end).getHours();
+  let start = new Date(eventInfo.event.start).getHours();
+  let end = new Date(eventInfo.event.end).getHours();
+  const startIsPm = Math.floor(start / 12) ? true : false;
+  const endIsPm = Math.floor(end / 12) ? true : false;
+  start = start % 12;
+  end = end % 12
   return (
     <div className="custom-event">
-      <b>{start} - {end}</b><br></br>
+      <b>{start}{startIsPm ? 'pm' : 'am'} - {end}{endIsPm ? 'pm' : 'am'}</b><br></br>
       <label className="fc-event-title">{eventInfo.event.title}</label>
     </div>
   );

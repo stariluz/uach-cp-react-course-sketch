@@ -1,52 +1,17 @@
-/* .fc-event-title {
-  display: block;
-  min-width: 100%;
-  max-width: 100%;
-  white-space: break-spaces;
+a {
+  color: #142a5a !important;
+  font-size: 0.65rem;
 }
 
-.fc-event-main {
-  color: unset !important;
-  height: 100%;
-  width: 100%;
-  position: absolute;
+.fc .fc-col-header-cell.fc-day {
+  background-color: #000000;
 }
 
-.fc .fc-daygrid-day-events {
-  display: flex;
-  min-width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
+.fc .fc-col-header-cell.fc-day a {
+  color: white !important;
+  font-size: 0.85rem;
 }
 
-.fc.fc-theme-standard .fc-view-harness .fc-event.fc-daygrid-block-event .fc-event-main {
-  height: fit-content;
-}
-
-.fc .fc-daygrid-day-bottom {
-  display: none;
-}
-
-.fc .fc-daygrid-event-harness {
-  width: 100%;
-}
-
-.fc.fc-theme-standard .fc-view-harness .fc-event.fc-daygrid-block-event {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.fc .fc-daygrid-day-number {
-  z-index: 100;
-}
-
-.calendar-grouped-by-date .fc .fc-scroller-liquid-absolute {
-  overflow: hidden !important;
-}
-*/
 .fc .fc-multimonth-header,
 .fc .fc-col-header-cell-cushion {
   text-transform: capitalize !important;
@@ -76,10 +41,12 @@
   height: 100%;
 }
 
-.fc .fc-daygrid-event {
-  /* margin-top: 1px; */
+.fc .fc-daygrid-event,
+.fc a.fc-daygrid-event {
+  background-color: #9456f7e5 !important;
+  color: white !important;
   z-index: 6;
-  height: 100%;
+  height: calc(100% - 2px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -94,4 +61,9 @@
 .fc-event-title {
   width: fit-content;
   white-space: break-spaces;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
 }
