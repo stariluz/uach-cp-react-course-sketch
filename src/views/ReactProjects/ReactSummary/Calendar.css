@@ -1,6 +1,16 @@
-a {
-  color: #142a5a !important;
-  font-size: 0.65rem;
+.fc-customMultiMonth-view,
+.fc-view,
+.fc-multimonth,
+.fc-multimonth-multicol,
+.fc-multimonth-compact {
+  overflow: visible;
+  position: relative !important;
+}
+
+a,
+{
+color: #142a5a !important;
+font-size: 0.65rem;
 }
 
 .fc .fc-col-header-cell.fc-day {

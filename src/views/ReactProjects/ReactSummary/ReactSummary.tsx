@@ -46,6 +46,7 @@ const ReactSummary = () => {
         left: '',
         right: '',
       }}
+      contentHeight={'auto'}
     ></FullCalendar>
   </div >
 }
