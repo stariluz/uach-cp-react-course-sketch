@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import { Outlet, useOutletContext } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import Navbar, { NavbarRef } from "src/components/Navbar/Navbar";
 const TicketMaster = () => {
   const [search, setSearch] = useState("")

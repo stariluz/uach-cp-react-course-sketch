@@ -1,12 +1,9 @@
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import headerStyles from './Headers.module.css';
 import logo from 'src/assets/logo.png'
 import qrCode from 'src/assets/qr-code.png'
 
 const ReactCourseHeader = () => {
-  const getLinkState = (isActive: any, isPending?: any) => {
-    return isActive ? 'active' : 'inactive'
-  };
   return (
     <div className="w-100 d-flex flex-column flex-md-row justify-content-between align-items-center p-2 p-sm-3">
       <div className={`d-flex flex-column flex-md-row  align-items-center`}>
