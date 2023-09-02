@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,700;10..48,800&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Slab:wght@700;800;900&display=swap');
+
+.logo {
+  width: 8rem;
+  height: 8rem;
+  margin-right: 2rem;
+}
+
+.qrCode {
+  width: 7rem;
+  height: 7rem;
+  margin-right: 1rem;
+}
+
+.title {
+  /* font-family: 'Bricolage Grotesque', sans-serif;
+font-family: 'Inter', sans-serif; */
+  font-family: 'Roboto Slab', serif;
+  font-weight: 900;
+  font-size: 4rem;
+}
+
+.navLink {
+  height: fit-content;
+  padding-top: 0;
+  padding-bottom: 0;
+  border-radius: 0 !important;
+  margin: 2px;
+}
+
+.navLink:hover {
+  color: #777777 !important;
+  border-bottom: 3px #777777 solid !important;
+}
+
+.navLinkActive,
+.navLinkActive:hover {
+  color: #0084ff !important;
+  border-bottom: 3px #0084ff solid !important;
+}

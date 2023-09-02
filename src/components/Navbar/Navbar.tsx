@@ -1,7 +1,4 @@
 import { ChangeEvent, Dispatch, EventHandler, KeyboardEvent, KeyboardEventHandler, SetStateAction, forwardRef, useImperativeHandle, useState } from "react";
-import navbarStyles from './Navbar.module.css';
-import logo from 'src/assets/logo.png'
-import qrCode from 'src/assets/qr-code.png'
 
 export class NavbarRef extends HTMLElement {
   search?: string;
@@ -29,21 +26,9 @@ const Navbar = forwardRef<NavbarRef, NavbarProps>(({ onSearch }: NavbarProps, lo
     setSearch: setSearch,
   }))
   return (
-    <div className="w-100 d-flex flex-column flex-md-row justify-content-between align-items-center p-3 p-sm-4 p-lg-5">
-      <div className={`d-flex flex-column flex-md-row  align-items-center`}>
-        <div className={`d-flex justify-content-center align-items-center`} ref={logosRef as any}>
-          <img src={qrCode} alt="Qr a la página" className={navbarStyles.qrCode} />
-          <img src={logo} alt="Logo del Club de Programación" className={navbarStyles.logo} />
-        </div>
-        <div className="">
-          <h1 className={`${navbarStyles.title} fw-bold d-flex align-items-center`}>
-            Curso de React
-          </h1>
-          {/* <h4>Con datos extraídos de la API de TicketMaster</h4> */}
-
-        </div>
-      </div>
-      {/* <div className="m-1">
+    <div className="w-100 d-flex flex-column flex-md-row justify-content-between align-items-center p-1">
+      <h4>Con datos extraídos de la API de TicketMaster</h4>
+      <div className="m-1">
         <div className="input-icon">
           <input type="text" name="" id="" placeholder="Busca un evento..." className="form-control form-control-rounded"
             onChange={handleSearchChange}
@@ -55,7 +40,7 @@ const Navbar = forwardRef<NavbarRef, NavbarProps>(({ onSearch }: NavbarProps, lo
           </span>
         </div>
 
-      </div> */}
+      </div>
     </div>
   );
 });

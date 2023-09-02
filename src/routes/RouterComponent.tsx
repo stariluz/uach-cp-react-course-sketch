@@ -23,7 +23,7 @@ const router = createBrowserRouter([
     element: <ReactProjects />,
     children: [
       {
-        path: "summary",
+        path: "calendar",
         element: <ReactSummary />,
       },
       {

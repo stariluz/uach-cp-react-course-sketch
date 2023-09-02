@@ -7,10 +7,9 @@
   position: relative !important;
 }
 
-a,
-{
-color: #142a5a !important;
-font-size: 0.65rem;
+a {
+  color: #737373 !important;
+  font-size: 0.65rem;
 }
 
 .fc .fc-col-header-cell.fc-day {
@@ -53,7 +52,7 @@ font-size: 0.65rem;
 
 .fc .fc-daygrid-event,
 .fc a.fc-daygrid-event {
-  background-color: #9456f7e5 !important;
+  background-color: #742ee5cd !important;
   color: white !important;
   z-index: 6;
   height: calc(100% - 2px);

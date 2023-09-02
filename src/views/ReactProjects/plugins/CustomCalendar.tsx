@@ -6,7 +6,6 @@ export default createPlugin({
       type: 'multiMonthYear',
       viewTitle: (props: any) => {
         return <div className='view-title'>
-          HOLA
           {props.dateProfile.currentRange.start.toUTCString()}
         </div>
       }
