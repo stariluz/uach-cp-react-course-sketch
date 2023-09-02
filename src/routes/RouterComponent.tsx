@@ -4,20 +4,15 @@ import {
   Navigate,
   RouterProvider,
 } from "react-router-dom";
-// import Home from "../views/Home/Home";
 import ReactProjects from "../views/ReactProjects/ReactProjects";
-// import Error404 from "src/views/Error404/Error404";
 import TicketMaster from "src/views/ReactProjects/TicketMaster/TicketMaster";
 import TicketMasterHome from "src/views/ReactProjects/TicketMaster/TicketMasterHome/TicketMasterHome";
 import TicketMasterEventDetail from "src/views/ReactProjects/TicketMaster/TicketMasterEventDetail/TicketMasterEventDetail";
 import ReactSummary from "src/views/ReactProjects/ReactSummary/ReactSummary";
+import PythonCourse from "src/views/PythonCourse/PythonCourse";
+import PythonCalendar from "src/views/PythonCourse/PythonCalendar/PythonCalendar";
 
 const router = createBrowserRouter([
-  // {
-  //   path: "/",
-  //   element: <Home />,
-  //   errorElement: <Error404></Error404>
-  // },
   {
     path: "react",
     element: <ReactProjects />,
@@ -38,8 +33,30 @@ const router = createBrowserRouter([
             path: "event/:eventId",
             element: <TicketMasterEventDetail />,
           },
+          {
+            path: "*",
+            element: <Navigate to={``} />
+          }
         ]
       },
+    ]
+  },
+  {
+    path: "python",
+    element: <PythonCourse />,
+    children: [
+      {
+        path: "calendar",
+        element: <PythonCalendar />,
+      },
+      {
+        path: "",
+        element: <Navigate to={`calendar`} />
+      },
+      {
+        path: "*",
+        element: <Navigate to={`calendar`} />
+      }
     ]
   },
   {

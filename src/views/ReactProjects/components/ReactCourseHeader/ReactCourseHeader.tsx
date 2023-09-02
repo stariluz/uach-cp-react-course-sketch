@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import headerStyles from './Headers.module.css';
+import headerStyles from './ReactCourseHeader.module.css';
 import logo from 'src/assets/logo.png'
 import qrCode from 'src/assets/qr-code.png'
 

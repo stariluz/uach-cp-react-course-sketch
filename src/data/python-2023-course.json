@@ -1,0 +1,32 @@
+[
+  {
+    "start": "2023-09-05T14:00:00",
+    "end": "2023-09-05T16:00:00",
+    "title": "Unidad I",
+    "content": "1.1 ¿Qué es Python y por qué aprenderlo?\n1.2 Instalación de Python y configuración del entorno de desarrollo.\n1.3 La estructura básica de un programa Python\n1.4 Variables, tipos de datos y operadores.\n1.5 Estructuras de control: condicionales (if, elif, else)."
+  },
+  {
+    "start": "2023-09-12T14:00:00",
+    "end": "2023-09-12T16:00:00",
+    "title": "Unidad II",
+    "content": "2.1 Bucles: for y while.\n2.2 Ejercicios prácticos para reforzar los conceptos.\n2.3 ¿Qué son las funciones ?\n2.4 Declaración y llamada de funciones.\n2.5 Parámetros y argumentos."
+  },
+  {
+    "start": "2023-09-19T14:00:00",
+    "end": "2023-09-19T16:00:00",
+    "title": "Unidad III",
+    "content": "3.1 Creación de módulos y reutilización de código\n3.2 Listas y su manipulación.\n3.3 Diccionarios y su uso.\n3.4 Aplicaciones prácticas en el manejo de datos.\n3.5 Lectura y escritura de archivos. !!\n3.6 Manipulación de rutas de archivo.  !!\n3.7 Manejo de excepciones y errores.\n3.8 Prácticas para manejar situaciones imprevistas."
+  },
+  {
+    "start": "2023-09-26T14:00:00",
+    "end": "2023-09-26T16:00:00",
+    "title": "Unidad IV",
+    "content": "4.1 Conceptos básicos de POO.\n4.2 Clases y objetos en Python.\n4.3 Atributos y métodos de clase.\n4.4 Encapsulación y herencia básica.\n4.5 ¿Qué son las bibliotecas y por qué usarlas? !!!\n4.6 Ejemplos de a bibliotecas populares: numpy, pandas, matplotlib. !!!"
+  },
+  {
+    "start": "2023-10-03T14:00:00",
+    "end": "2023-10-03T16:00:00",
+    "title": "Unidad V",
+    "content": "5.1 Desarrollo de un proyecto pequeño utilizando los conceptos aprendidos."
+  }
+]

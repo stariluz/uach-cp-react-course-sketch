@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-import ReactCourseHeader from "./components/Headers/ReactCourseHeader";
+import ReactCourseHeader from "./components/ReactCourseHeader/ReactCourseHeader";
 
 const ReactProjects = () => {
   return <>
