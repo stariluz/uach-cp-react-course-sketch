@@ -5,6 +5,9 @@
 .fc-multimonth-compact {
   overflow: visible;
   position: relative !important;
+  border: 0px !important;
+  background-color: white;
+  border-radius: 4px;
 }
 
 a {
@@ -68,7 +71,8 @@ a {
 }
 
 .fc-event-title {
-  width: fit-content;
+  width: 100%;
+  overflow-wrap: break-word;
   white-space: break-spaces;
   display: -webkit-box;
   -webkit-box-orient: vertical;

@@ -6,6 +6,7 @@ import esLocale from '@fullcalendar/core/locales/es';
 import React2023Classes from "src/data/react-2023-classes.json";
 
 import './Calendar.css';
+import { useEffect, useState } from "react";
 
 const ReactSummary = () => {
   const visibleRange: DateRangeInput = {
@@ -20,7 +21,16 @@ const ReactSummary = () => {
       end: meeting.end,
     }
   });
-  console.log(events);
+
+  const [matches, setMatches] = useState(
+    window.matchMedia("(min-width: 530px)").matches
+  )
+
+  useEffect(() => {
+    window
+      .matchMedia("(min-width: 530px)")
+      .addEventListener('change', e => setMatches(e.matches));
+  }, []);
 
   return <div className="w-100">
     <FullCalendar
@@ -47,6 +57,8 @@ const ReactSummary = () => {
         right: '',
       }}
       contentHeight={'auto'}
+
+      aspectRatio={matches ? 1.35 : 1}
     ></FullCalendar>
   </div >
 }
