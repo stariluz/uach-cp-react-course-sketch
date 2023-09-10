@@ -1,5 +1,4 @@
-import { FloatingArrow, arrow, offset, safePolygon, shift, useClick, useDismiss, useFloating, useFocus, useHover, useInteractions, useRole, useTransitionStyles } from "@floating-ui/react";
-import { EventInput } from "fullcalendar/index.js";
+import { FloatingArrow, arrow, offset, shift, useClick, useFloating, useFocus, useInteractions, useRole, useTransitionStyles } from "@floating-ui/react";
 import { useRef, useState } from "react";
 import './EventContent.css';
 
