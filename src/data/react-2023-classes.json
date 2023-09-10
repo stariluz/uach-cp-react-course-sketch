@@ -3,13 +3,13 @@
     "start": "2023-08-24T14:00:00",
     "end": "2023-08-24T16:00:00",
     "title": "Introducción a React",
-    "content": "1. ¿Qué es React y su virtual DOM?\n2. Ecosistema de desarrollo\n3. ¿Qué es un componente y como se subdivide?"
+    "content": "1. ¿Qué es React?\n2. Ecosistema de desarrollo\n3. ¿Qué es un componente y como se subdivide?"
   },
   {
     "start": "2023-09-04T14:00:00",
     "end": "2023-09-04T16:00:00",
     "title": "Reactividad y State",
-    "content": "4. JSX y React Components\n5. Reactividad, estado e inmutabilidad\n6. ¿Qué son los props?\n7. Iniciación del proyecto con Vite"
+    "content": "4. VirtualDOM JSX y React Components\n5. Reactividad, estado e inmutabilidad\n6. ¿Qué son los props?\n7. Iniciación del proyecto con Vite"
   },
   {
     "start": "2023-09-18T14:00:00",
