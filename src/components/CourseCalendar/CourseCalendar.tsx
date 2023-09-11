@@ -17,13 +17,14 @@ const CourseCalendar = (
     end: new Date(2023, 11, 1),
   };
 
-  const events: EventInput[] = meetings.map((meeting: any): EventInput => {
+  const events: EventInput[] = meetings.map((meeting: any, index: number): EventInput => {
     return {
       title: meeting.title,
       start: meeting.start,
       end: meeting.end,
       extendedProps: {
         content: meeting.content,
+        sesionNumber: index + 1,
       }
     }
   });
@@ -52,6 +53,8 @@ const CourseCalendar = (
         locale={esLocale}
         events={events}
         initialDate={visibleRange.start}
+        stickyHeaderDates={false}
+        stickyFooterScrollbar={false}
         views={{
           customMultiMonth: {
             type: 'multiMonthYear',
@@ -60,6 +63,7 @@ const CourseCalendar = (
             multiMonthMaxColumns: 2,
             initialDate: visibleRange.start,
             weekends: false,
+            stickyHeaderDates: false,
           }
         }}
         eventContent={(data) => <EventContent data={data} />}

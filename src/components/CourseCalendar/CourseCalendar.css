@@ -29,20 +29,6 @@ a {
   text-transform: capitalize !important;
 }
 
-.fc .fc-daygrid-day-events {
-  display: flex;
-  min-width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  padding: 0;
-  margin: 0;
-}
-
-.fc .fc-daygrid-body-balanced .fc-daygrid-day-events {
-  left: 0px;
-  position: absolute;
-  right: 0px;
-  height: 100%;
-  top: 0;
+.fc-media-screen .fc-multimonth-singlecol .fc-multimonth-header {
+  position: unset !important;
 }
