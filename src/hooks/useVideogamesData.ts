@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 const useVideogamesData = () => {
   const [games, setGames] = useState<any>([]);
