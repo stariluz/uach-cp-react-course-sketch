@@ -27,7 +27,10 @@ const Navbar = forwardRef<NavbarRef, NavbarProps>(({ onSearch }: NavbarProps, lo
   }))
   return (
     <div className="w-100 d-flex flex-column flex-md-row justify-content-between align-items-center p-1">
-      <h4>Con datos extraídos de la API de TicketMaster</h4>
+      <a className="link-opacity-100" href="https://rawg.io/" target="blank">
+        <h4 className="h-4">Con datos extraídos de la API de RAWG
+        </h4>
+      </a>
       <div className="m-1">
         <div className="input-icon">
           <input type="text" name="" id="" placeholder="Busca un evento..." className="form-control form-control-rounded"

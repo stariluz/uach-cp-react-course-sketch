@@ -15,24 +15,24 @@
     "start": "2023-09-18T14:00:00",
     "end": "2023-09-18T16:00:00",
     "title": "Condiciones, listas, eventos y formularios",
-    "content": "8. Renderizado condicional\n9. Renderizado de listas\n10. Manejo de eventos\n11. Formularios y React Hook Form"
+    "content": "8. Renderizado condicional\n9. Renderizado de listas\n10. Manejo de eventos"
   },
   {
     "start": "2023-10-02T14:00:00",
     "end": "2023-10-02T16:00:00",
     "title": "Hooks",
-    "content": "12. ¿Qué son los Hooks?\n13. Hook: useEffect\n14. Custom Hooks\n15. ¿Qué son las referencias?\n16. Hook: useRef\n17. Hooks: forwardRef y useImperativeHandle"
+    "content": "11. ¿Qué son los Hooks?\n12. Hook: useEffect\n13. Custom Hooks\n14. ¿Qué son las referencias?\n15. Hook: useRef\n16. Hooks: forwardRef y useImperativeHandle"
   },
   {
     "start": "2023-10-16T14:00:00",
     "end": "2023-10-16T16:00:00",
-    "title": "Estilos",
-    "content": "18. Estilos en linea, CSS y módulos de CSS\nExtra: Bootstrap"
+    "title": "Rutas",
+    "content": "17. ¿Cómo funciona el routing y el Client Side Routing?\n18. Ruteo con React Router DOM\n19. Manejo de rutas erróneas\n20. Rutas con parámetros\n21. Crear rutas anidadas"
   },
   {
     "start": "2023-10-30T14:00:00",
     "end": "2023-10-30T16:00:00",
-    "title": "Rutas",
-    "content": "19. ¿Cómo funciona el routing y el Client Side Routing?\n20. Ruteo con React Router DOM\n21. Manejo de rutas erróneas\n22. Rutas con parámetros\n23. Crear rutas anidadas"
+    "title": "Conexión a la Api",
+    "content": "22. Fetch\n23. Css y bootstrap"
   }
 ]

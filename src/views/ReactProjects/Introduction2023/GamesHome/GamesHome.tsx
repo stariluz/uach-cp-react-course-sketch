@@ -1,9 +1,9 @@
 import { useOutletContext } from "react-router-dom";
-import Events from "src/components/Events/Events";
+import GamesList from "src/components/GamesList/GamesList";
 import Info from "src/components/Info/Info";
 
-const TicketMasterHome = () => {
-  const { search } = useOutletContext<any>();
+const GamesHome = () => {
+  const { games, error, isLoading } = useOutletContext<any>();
 
   return (
     <>
@@ -11,9 +11,11 @@ const TicketMasterHome = () => {
         <div className="row">
           <Info></Info>
           <div className="col-12 col-sm-8 col-md-9">
-            <Events
-              search={search}
-            ></Events>
+            <GamesList
+              games={games}
+              error={error}
+              isLoading={isLoading}
+            ></GamesList>
           </div>
         </div>
 
@@ -23,4 +25,4 @@ const TicketMasterHome = () => {
   );
 }
 
-export default TicketMasterHome;
+export default GamesHome;

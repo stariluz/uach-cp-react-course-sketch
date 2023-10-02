@@ -6,14 +6,14 @@ import qrCode from 'src/assets/qr-code.png'
 const ReactCourseHeader = () => {
   return (
     <div className="w-100 d-flex flex-column flex-md-row justify-content-between align-items-center p-2 p-sm-3">
-      <div className={`d-flex flex-column flex-md-row  align-items-center`}>
-        <div className={`d-flex justify-content-center align-items-center`}>
+      <div className={`d-flex flex-column flex-md-row  align-items-center gap-2`}>
+        <div className={`d-flex justify-content-center align-items-center gap-2 ${headerStyles.logos}`}>
           <img src={qrCode} alt="Qr a la página" className={headerStyles.qrCode} />
           <img src={logo} alt="Logo del Club de Programación" className={headerStyles.logo} />
         </div>
         <div className="">
-          <h1 className={`${headerStyles.title} fw-bold d-flex align-items-center`}>
-            Curso de React
+          <h1 className={`${headerStyles.title} text-center text-md-start`}>
+            Curso de Introducción a React
           </h1>
         </div>
       </div>
@@ -28,7 +28,7 @@ const ReactCourseHeader = () => {
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink to={'/react/ticket-master'} className={({ isActive }: { isActive: any }) => `nav-link ${headerStyles.navLink} ${isActive ? headerStyles.navLinkActive : 'inactive'}`}>
+                  <NavLink to={'/react/games'} className={({ isActive }: { isActive: any }) => `nav-link ${headerStyles.navLink} ${isActive ? headerStyles.navLinkActive : 'inactive'}`}>
                     Proyecto
                   </NavLink>
                 </li>

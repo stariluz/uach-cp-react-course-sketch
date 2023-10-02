@@ -19,19 +19,19 @@ const Info = () => {
       <li>Renderizado condicional</li>
       <li>Renderizado de listas</li>
       <li>Manejo de eventos</li>
-      <li>Formularios y <i>React Hook Form</i></li>
       <li>¿Qué son los Hooks?</li>
       <li>Hook: <i>useEffect</i></li>
       <li>Custom Hooks</li>
       <li>¿Qué son las referencias?</li>
       <li>Hook: useRef</li>
       <li>Hooks: forwardRef y useImperativeHandle</li>
-      <li>Estilos en linea, CSS y módulos de CSS</li>
       <li>¿Cómo funciona el routing y el Client Side Routing?</li>
       <li>Ruteo con React Router DOM </li>
       <li>Manejo de rutas erróneas</li>
       <li>Rutas con parámetros</li>
       <li>Crear rutas anidadas</li>
+      <li>Fetch. Conexión a la API.</li>
+      <li>Css y Bootstrap</li>
       <li>Y más por agregar :D <span className="animated-dots"></span></li>
     </ol>
     <div className={`${infoStyles.qrContainer}`}>

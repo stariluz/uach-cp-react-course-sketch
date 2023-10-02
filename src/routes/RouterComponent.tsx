@@ -5,12 +5,13 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import ReactProjects from "../views/ReactProjects/ReactProjects";
-import TicketMaster from "src/views/ReactProjects/TicketMaster/TicketMaster";
-import TicketMasterHome from "src/views/ReactProjects/TicketMaster/TicketMasterHome/TicketMasterHome";
-import TicketMasterEventDetail from "src/views/ReactProjects/TicketMaster/TicketMasterEventDetail/TicketMasterEventDetail";
+
 import ReactSummary from "src/views/ReactProjects/ReactSummary/ReactSummary";
 import PythonCourse from "src/views/PythonCourse/PythonCourse";
 import PythonCalendar from "src/views/PythonCourse/PythonCalendar/PythonCalendar";
+import Introduction2023 from "src/views/ReactProjects/Introduction2023/Introduction2023";
+import GamesHome from "src/views/ReactProjects/Introduction2023/GamesHome/GamesHome";
+import GameDetail from "src/views/ReactProjects/Introduction2023/GameDetail/GameDetail";
 
 const router = createBrowserRouter([
   {
@@ -22,16 +23,16 @@ const router = createBrowserRouter([
         element: <ReactSummary />,
       },
       {
-        path: 'ticket-master',
-        element: <TicketMaster />,
+        path: 'games',
+        element: <Introduction2023 />,
         children: [
           {
             path: "",
-            element: <TicketMasterHome />,
+            element: <GamesHome />,
           },
           {
-            path: "event/:eventId",
-            element: <TicketMasterEventDetail />,
+            path: ":gameId",
+            element: <GameDetail />,
           },
           {
             path: "*",
@@ -61,7 +62,7 @@ const router = createBrowserRouter([
   },
   {
     path: '*',
-    element: <Navigate to={`react/ticket-master`} />
+    element: <Navigate to={`react/games`} />
   }
 ], { basename: '/uach-react-course-sketch/' });
 
