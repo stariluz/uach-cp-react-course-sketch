@@ -64,7 +64,7 @@ const router = createBrowserRouter([
     path: '*',
     element: <Navigate to={`react/games`} />
   }
-], { basename: '/uach-react-course-sketch/' });
+], { basename: '/uach-cp-react-course-sketch/' });
 
 const RouterComponent = () => <RouterProvider router={router} />
 export default RouterComponent;
