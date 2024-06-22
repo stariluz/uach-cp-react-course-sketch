@@ -15,6 +15,7 @@ permissions:
   pages: write
   id-token: write
 
+
 # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
 # However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
@@ -38,6 +39,12 @@ jobs:
           cache: 'npm'
       - name: Install dependencies
         run: npm install
+      - name: Save environment variables
+        run:
+          echo "VITE_REPO_NAME=${{ github.event.repository.name }}" >> environment/.env.production
+      - name: Test environment variables
+        run:
+          cat environment/.env.production
       - name: Build
         run: npm run build
       - name: Setup Pages

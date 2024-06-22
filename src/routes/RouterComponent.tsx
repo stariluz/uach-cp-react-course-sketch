@@ -64,7 +64,12 @@ const router = createBrowserRouter([
     path: '*',
     element: <Navigate to={`react/games`} />
   }
-], { basename: '/uach-cp-react-course-sketch/' });
+], {
+  basename: process.env.NODE_ENV === 'production'
+    ? `/${import.meta.env.VITE_REPO_NAME}/`
+    : '/',
+}
+);
 
 const RouterComponent = () => <RouterProvider router={router} />
 export default RouterComponent;
